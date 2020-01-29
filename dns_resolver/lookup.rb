@@ -33,7 +33,6 @@ end
 def resolve(dns_records,lookup_chain,domain)  
   dns_records.each do|item|
     if item[1].eql? domain  
-      #puts domain
       if item[0].eql? "A" 
         lookup_chain<<item[2]
         return lookup_chain
